@@ -63,14 +63,6 @@
                         <option selected value="${d.getId()}"><c:out value="${d.getName()}"/></option>
                     </c:if>
                 </c:forEach>
-                <%--                Đỗ minh đức--%>
-                <%--                <option hidden selected--%>
-                <%--                        value="${requestScope["product"].getCategory().getId()}">--%>
-                <%--                    ${requestScope["product"].getCategory().getName()}--%>
-                <%--                </option>--%>
-                <%--                <c:forEach items="${categories}" var="c">--%>
-                <%--                      <option value="${c.getId()}"><c:out value="${c.getName()}"/></option>--%>
-                <%--                </c:forEach>--%>
             </select>
         </div>
         <div class="mb-3">

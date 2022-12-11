@@ -82,7 +82,7 @@ public class StaffDepartmentServlet extends HttpServlet {
 
     private void createForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Department> departments = staffService.findDepartment();
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("staff/create.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("staff/create1.jsp");
         request.setAttribute("departments", departments);
         requestDispatcher.forward(request, response);
     }
@@ -93,7 +93,7 @@ public class StaffDepartmentServlet extends HttpServlet {
     }
 
     private void updateForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("staff/update.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("staff/update1.jsp");
         request.setAttribute("staffs", staffService.findById(request));
         request.setAttribute("departments", staffService.findDepartment());
         requestDispatcher.forward(request, response);
